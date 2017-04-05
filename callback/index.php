@@ -1,5 +1,5 @@
 <?php
-$accessToken = 'あなたのアクセストークン！';
+$accessToken = 'epeoNs1k91cAAbRkDgjEqXkayy+vkidWnRmNQvYOcVjRCa20Q8Nmj7qBJpAM/A2B59HGkJSNs54oq4zdJwOA9BuJomxFMz+PIIMgD7nC1W+wkUxKaaJ5gzymmUhNdb3hEHDIz7ErZlClJ6VSsYoYhwdB04t89/1O/w1cDnyilFU=';
 //ユーザーからのメッセージ取得
 $json_string = file_get_contents('php://input');
 $jsonObj = json_decode($json_string);
