@@ -15,7 +15,7 @@ if($type != "text"){
 //返信データ作成
 $response_format_text = [
 	"type" => "text",
-	"text" => "金剛デース！"
+	"text" => "bot初制作(ソースコピペ)"
 	];
 $post_data = [
 	"replyToken" => $replyToken,
