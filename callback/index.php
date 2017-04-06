@@ -15,7 +15,7 @@ $text2 = "鍵壊様";
 if($type != "text"){
 	 exit;
 }
-if($text == $text2){
+if($text == "鍵壊様"){
 $response_format_text = [
 	"type" => "text",
 	"text" => "鍵壊様はイケメン！！！"
