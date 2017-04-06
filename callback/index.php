@@ -8,6 +8,8 @@ $type = $jsonObj->{"events"}[0]->{"message"}->{"type"};
 $text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 //ReplyToken取得
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
+//相手のuserId
+$userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 //メッセージ以外のときは何も返さず終了
 if($type != "text"){
 	 exit;
@@ -19,7 +21,7 @@ $response_format_text = [
 	];
 $post_data = [
 	"replyToken" => $replyToken,
-	"messages" => [$response_format_text]
+	"messages" => [$userId]
 	];
 $ch = curl_init("https://api.line.me/v2/bot/message/reply");
 curl_setopt($ch, CURLOPT_POST, true);
