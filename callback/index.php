@@ -17,7 +17,7 @@ if($type != "text"){
 //返信データ作成1
 $response_format_text = [
 	"type" => "text",
-	"text" => "bot初制作(ソースコピペ)"
+	"text" => "鍵壊様はイケメン！！！"
 	];
 //返信データ作成2
 $response_format_text2 =[
@@ -26,7 +26,7 @@ $response_format_text2 =[
 	];
 $post_data = [
 	"replyToken" => $replyToken,
-	"messages" => [$response_format_text2]
+	"messages" => [$response_format_text]
 	];
 $ch = curl_init("https://api.line.me/v2/bot/message/reply");
 curl_setopt($ch, CURLOPT_POST, true);
