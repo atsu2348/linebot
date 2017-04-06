@@ -14,14 +14,19 @@ $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 if($type != "text"){
 	 exit;
 } 
-//返信データ作成
+//返信データ作成1
 $response_format_text = [
 	"type" => "text",
 	"text" => "bot初制作(ソースコピペ)"
 	];
+//返信データ作成2
+$response_format_text2 =[
+	"type" => "text"
+	"text" => [$userId]
+	];
 $post_data = [
 	"replyToken" => $replyToken,
-	"messages" => [$userId]
+	"messages" => [$response_format_text2]
 	];
 $ch = curl_init("https://api.line.me/v2/bot/message/reply");
 curl_setopt($ch, CURLOPT_POST, true);
