@@ -13,12 +13,19 @@ $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 //メッセージ以外のときは何も返さず終了
 if($type != "text"){
 	 exit;
-} 
-//返信データ作成1
+}
+if($text == "鍵壊様"){
 $response_format_text = [
 	"type" => "text",
 	"text" => "鍵壊様はイケメン！！！"
+	]
+	}else{
+//返信データ作成1
+$response_format_text = [
+	"type" => "text",
+	"text" => "Test API"
 	];
+	}
 //返信データ作成2
 $response_format_text2 =[
 	"type" => "text",
