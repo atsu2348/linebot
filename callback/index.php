@@ -21,7 +21,7 @@ $response_format_text = [
 	];
 //返信データ作成2
 $response_format_text2 =[
-	"type" => "text"
+	"type" => "text",
 	"text" => "$userId"
 	];
 $post_data = [
