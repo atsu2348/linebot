@@ -10,21 +10,20 @@ $text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
-$text2 = "鍵壊様";
 //メッセージ以外のときは何も返さず終了
 if($type != "text"){
 	 exit;
 }
 if($text == "鍵壊様"){
-$response_format_text = [
-	"type" => "text",
-	"text" => "鍵壊様はイケメン！！！"
+	 $response_format_text = [
+	 	"type" => "text",
+		"text" => "鍵壊様はイケメン！！！"
 	];
 	}else{
-//返信データ作成1
-$response_format_text = [
-	"type" => "text",
-	"text" => "Test API"
+	//返信データ作成1
+	$response_format_text = [
+		"type" => "text",
+		"text" => "Test API"
 	];
 }
 //返信データ作成2
