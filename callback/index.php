@@ -11,7 +11,7 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 //メッセージ以外のときは何も返さず終了
-if($type != "text"){
+if($type != "text"　|| $text != "鍵壊様"){
 	 exit;
 }
 if($text == "鍵壊様"){
