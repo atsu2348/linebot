@@ -15,7 +15,7 @@ if($type != "text"){
 	 exit;
 }
 //if($text == "鍵壊様はイケメン！！！"){
-if(preg_match("鍵壊様はイケメン",$text)){
+if(preg_match("/鍵壊様はイケメン/",$text)){
 	 $response_format_text = [
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
