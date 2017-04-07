@@ -19,10 +19,15 @@ if($text == "鍵壊様はイケメン！！！"){
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
 	];
-	}elseif(preg_match("/あほー/",$text)){
+	}elseif(preg_match("/あほ/",$text)){
 		$response_format_text = [
 			"type" => "text",
 			"text" => "もあほー"
+		];
+	}elseif($text == "無垢王様バンザイ！！！"){
+		$response_format_text = [
+			"type" => "text",
+			"text" => "無垢王様バンザイ！！！"
 		];
 	}elseif($text != "鍵壊様はイケメン！！！"){
 	exit;
