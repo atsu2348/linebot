@@ -35,7 +35,8 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 			"type" => "text",
 			"text" => "草はやし過ぎ"
 		];
-	}elseif($text != "鍵壊様はイケメン！！！"){
+	//}elseif($text != "鍵壊様はイケメン！！！"){
+	}else{
 	exit;
 }
 /*
