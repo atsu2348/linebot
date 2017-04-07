@@ -19,7 +19,7 @@ if($text == "鍵壊様はイケメン！！！"){
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
 	];
-	}else if(strpos($text,'あほー') !== false){
+	}elseif(strpos($text,'あほー') !== false){
 	$response_format_text = [
 		"type" => "text",
 		"text" => "もあほー"
