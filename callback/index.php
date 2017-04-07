@@ -24,7 +24,7 @@ if($text == "鍵壊様はイケメン！！！"){
 			"type" => "text",
 			"text" => "もあほー"
 		];
-	}elseif($text == "無垢王様バンザイ！！！"){
+	}elseif(preg_match("/無垢王様バンザイ/",$text)){
 		$response_format_text = [
 			"type" => "text",
 			"text" => "無垢王様バンザイ！！！"
