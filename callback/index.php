@@ -11,7 +11,7 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 //メッセージ以外のときは何も返さず終了
-if($type != "text" || $text != "鍵壊様はイケメン！！！"){
+if($type != "text"){
 	 exit;
 }
 if($text == "鍵壊様はイケメン！！！"){
@@ -19,11 +19,13 @@ if($text == "鍵壊様はイケメン！！！"){
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
 	];
-}elseif(preg_match("/あほー/",$text)){
-	$response_format_text = [
-		"type" => "text",
-		"text" => "もあほー"
-	];
+	}elseif(preg_match("/あほー/",$text)){
+		$response_format_text = [
+			"type" => "text",
+			"text" => "もあほー"
+		];
+	}elseif($text != "鍵壊様はイケメン！！！"){
+	exit;
 }
 /*
 //返信データ作成1
