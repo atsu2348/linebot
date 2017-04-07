@@ -30,6 +30,11 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 			"type" => "text",
 			"text" => "無垢王様バンザイ！！！"
 		];
+	}elseif(preg_match("/wwww/",$text) || preg_match("/ｗｗｗｗ/",$text)){
+		$response_format_text = [
+			"type" => "text",
+			"text" => "草はやし過ぎ"
+		];
 	}elseif($text != "鍵壊様はイケメン！！！"){
 	exit;
 }
