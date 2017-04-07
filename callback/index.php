@@ -19,16 +19,17 @@ if($text == "鍵壊様はイケメン！！！"){
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
 	];
-	}elseif(preg_match("/あほー/",$text)){
+}
+if(preg_match("/あほー/",$text)){
 	$response_format_text = [
 		"type" => "text",
 		"text" => "もあほー"
 	];
-	}else{
-	//返信データ作成1
-	$response_format_text = [
-		"type" => "text",
-		"text" => "Test API"
+}
+//返信データ作成1
+$response_format_text = [
+	"type" => "text",
+	"text" => "Test API"
 	];
 }
 //返信データ作成2
