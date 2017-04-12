@@ -46,7 +46,7 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 	//exit;
 }
 //返信データ作成1
-$response_format_text3 = [
+$response_format_text = [
 	"type" => "text",
 	"text" => "Test API"
 	];
