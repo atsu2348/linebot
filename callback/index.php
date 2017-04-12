@@ -10,6 +10,7 @@ $text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
+$now_day = date('Y/m/d');
 //メッセージ以外のときは何も返さず終了
 if($type != "text"){
 	 exit;
@@ -34,6 +35,11 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 		$response_format_text = [
 			"type" => "text",
 			"text" => "草はやし過ぎ"
+		];
+	}elseif($text == "今日の日付"){
+		$response_format_text = [
+			"type" => "text",
+			"text" => [$now_day]
 		];
 	//}elseif($text != "鍵壊様はイケメン！！！"){
 	}else{
