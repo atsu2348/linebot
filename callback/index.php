@@ -56,7 +56,7 @@ $response_format_text2 =[
 	"text" => "$userId"
 	];
 $post_data = [
-	"replyToken" => $replyToken
+	"replyToken" => $replyToken ,
 	"messages" => [$response_format_text]
 	];
 $ch = curl_init("https://api.line.me/v2/bot/message/reply");
