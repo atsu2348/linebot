@@ -42,8 +42,8 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 			"text" => [$now_day]
 		];
 	//}elseif($text != "鍵壊様はイケメン！！！"){
-	}else{
-	exit;
+	//}else{
+	//exit;
 }
 /*
 //返信データ作成1
