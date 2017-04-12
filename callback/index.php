@@ -36,9 +36,7 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 			"type" => "text",
 			"text" => "草はやし過ぎ"
 		];
-	}
-	/*
-	elseif($text == "今日の日付"){
+	}elseif($text == "今日の日付"){
 		$response_format_text = [
 			"type" => "text",
 			"text" => [$now_day]
