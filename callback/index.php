@@ -46,23 +46,20 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 	//}elseif($text != "鍵壊様はイケメン！！！"){
 	//}else{
 	//exit;
-//}
-/*
+}
 //返信データ作成1
-$response_format_text = [
+$response_format_text3 = [
 	"type" => "text",
 	"text" => "Test API"
 	];
-	*/
 //返信データ作成2
 $response_format_text2 =[
 	"type" => "text",
 	"text" => "$userId"
 	];
 $post_data = [
-	"replyToken" => $replyToken,
-	"messages" => [$now_day]
-	//"messages" => [$response_format_text]
+	"replyToken" => $replyToken
+	"messages" => [$response_format_text]
 	];
 $ch = curl_init("https://api.line.me/v2/bot/message/reply");
 curl_setopt($ch, CURLOPT_POST, true);
