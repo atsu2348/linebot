@@ -49,7 +49,7 @@ if(preg_match("/鍵壊様はイケメン/",$text)){
 		];
 	}elseif($text == "今の時間"){
 		$response_format_text = [
-			"type" => "text";
+			"type" => "text",
 			"text" => &now_time
 		];
 	}elseif($text != "鍵壊様はイケメン！！！"){
