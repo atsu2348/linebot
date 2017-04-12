@@ -17,7 +17,19 @@ if($type != "text"){
 	 exit;
 }
 //if($text == "鍵壊様はイケメン！！！"){
-if(preg_match("/鍵壊様はイケメン/",$text)){
+if($text == "help"){
+	 $response_format_text = [
+	 	"type" => "text",
+		"text" => "-----現在反応する文一覧-----
+「鍵壊様はイケメン」を含む文
+「あほ」を含む文
+「無垢王様バンザイ」を含む文
+「wwww」または「ｗｗｗｗ」以上のｗの数を含む文
+今日の日付
+今の時間
+変態糞土方"
+];
+}elseif(preg_match("/鍵壊様はイケメン/",$text)){
 	 $response_format_text = [
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
