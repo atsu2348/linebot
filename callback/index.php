@@ -59,8 +59,8 @@ $response_format_text2 =[
 	];
 $post_data = [
 	"replyToken" => $replyToken,
-	"messages" => [$now_day]
-	//"messages" => [$response_format_text]
+	//"messages" => [$now_day]
+	"messages" => [$response_format_text]
 	];
 $ch = curl_init("https://api.line.me/v2/bot/message/reply");
 curl_setopt($ch, CURLOPT_POST, true);
