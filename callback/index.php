@@ -10,7 +10,7 @@ $text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
-$now_day = date('Y-m-d');
+$now_day = date('Y-m-d(e)');
 date_default_timezone_set('Asia/Tokyo');
 $now_time = date('H:i.s');
 //メッセージ以外のときは何も返さず終了
