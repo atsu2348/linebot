@@ -23,7 +23,7 @@ if($text == "help"){
 	 	"type" => "text",
 		"text" => "---現在反応する文一覧---(悪用禁止)
 「鍵壊様はイケメン」を含む文
-「あほ」を含む文
+もあほー(削除検討)
 「無垢王様バンザイ」を含む文
 wが4文字以上含む文
 now_day
@@ -35,7 +35,8 @@ now_time
 	 	"type" => "text",
 		"text" => "鍵壊様はイケメン！！！"
 	];
-	}elseif(preg_match("/あほ/",$text)){
+	}elseif($text == "もあほー"){
+	//elseif(preg_match("/あほ/",$text)){
 		$response_format_text = [
 			"type" => "text",
 			"text" => "もあほー"
