@@ -45,7 +45,7 @@ now_time
 			"type" => "text",
 			"text" => "無垢王様バンザイ！！！"
 		];
-	}elseif(preg_match('|^[w]{4,}i,$text)){
+	}elseif(preg_match('|^[wWｗW]{4,},$text)){
 	//elseif(preg_match("/wwww/",$text) || preg_match("/ｗｗｗｗ/",$text)){
 		$response_format_text = [
 			"type" => "text",
