@@ -11,7 +11,7 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 $now_day = date('Y-m-d');
-$now_time = date('H:i:s (e)(T)');
+$now_time = date_default_timezone_set('Asia/Tokyo');
 //メッセージ以外のときは何も返さず終了
 if($type != "text"){
 	 exit;
