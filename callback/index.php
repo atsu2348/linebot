@@ -11,7 +11,8 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 //相手のuserId
 $userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 date_default_timezone_set('Asia/Tokyo');
-$now_day = date('Y-m-d');
+$now_date = date('Y-m-d');
+$now_day = date('l');
 $now_time = date('H:i.s');
 //メッセージ以外のときは何も返さず終了
 if($type != "text"){
@@ -26,6 +27,7 @@ if($text == "help"){
 もあほー(削除検討)
 「無垢王様バンザイ」を含む文
 wが4文字以上含む文
+now_date
 now_day
 now_time
 変態糞土方"
@@ -51,6 +53,11 @@ now_time
 		$response_format_text = [
 			"type" => "text",
 			"text" => "草はやし過ぎ"
+		];
+	}elseif($text == "now_date"){
+		$response_format_text = [
+			"type" => "text",
+			"text" => $now_date
 		];
 	}elseif($text == "now_day"){
 		$response_format_text = [
