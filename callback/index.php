@@ -30,7 +30,8 @@ wが4文字以上含む文
 now_date
 now_day
 now_time
-変態糞土方"
+変態糞土方
+邪淫について"
 ];
 }elseif(preg_match("/鍵壊様はイケメン/",$text)){
 	 $response_format_text = [
